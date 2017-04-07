@@ -1,0 +1,16 @@
+// http://br.spoj.com/problems/FATORIA2/
+
+#include <stdio.h>
+
+int factorial(const int n) {
+  if (n > 1)
+    return n * factorial(n-1);
+  return 1;
+}
+
+int main() {
+  int n;
+  scanf("%d", &n);
+  printf("%d\n", factorial(n));
+  return 0;
+}

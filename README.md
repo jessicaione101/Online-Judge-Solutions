@@ -1,6 +1,6 @@
 Solutions for online judges problems.
 
-Sphere
+SPOJ
 www.spoj.com
 
 URI
