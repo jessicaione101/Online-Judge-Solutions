@@ -48,7 +48,7 @@ int main() {
       for (size_t i = 0; i < publications[author].size(); ++i) {
         if (authors_erdos_numbers[publications[author][i]] < 0) {
           authors_erdos_numbers[publications[author][i]]
-            = authors_erdos_numbers[author]+1;
+            = authors_erdos_numbers[author] + 1;
           processing.push(publications[author][i]);
         }
       }
