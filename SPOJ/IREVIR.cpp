@@ -2,16 +2,16 @@
 
 #include <iostream>
 #include <vector>
-#include <queue>
+#include <stack>
 #include <algorithm>
 
 bool isConnected(const std::vector<std::vector<int>>& map) {
   for (size_t i = 0; i < map.size(); ++i) {
     std::vector<bool> visited(map.size());
-    std::queue<int> to_visit;
+    std::stack<int> to_visit;
     to_visit.push(i);
     while (!to_visit.empty()) {
-      int intersection = to_visit.front();
+      int intersection = to_visit.top();
       to_visit.pop();
       if (!visited[intersection]) {
         visited[intersection] = true;
