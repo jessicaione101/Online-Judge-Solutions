@@ -4,16 +4,16 @@
 #include <vector>
 #include <map>
 #include <string>
-#include <stack>
+#include <queue>
 
 int countFoodChain(const std::vector<std::vector<int>>& nature, int animal) {
   std::vector<bool> visited(nature.size());
-  std::stack<int> to_visit;
+  std::queue<int> to_visit;
   to_visit.push(animal);
   visited[animal] = true;
   int size = 1;
   while (!to_visit.empty()) {
-    animal = to_visit.top();
+    animal = to_visit.front();
     to_visit.pop();
     for (size_t i = 0; i < nature[animal].size(); ++i) {
       if (!visited[nature[animal][i]]) {
