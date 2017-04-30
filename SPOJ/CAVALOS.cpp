@@ -2,8 +2,6 @@
 
 #include <iostream>
 #include <vector>
-#include <queue>
-#include <algorithm>
 
 bool depthFirstSearch(const int source, const int sink,
                       const std::vector<std::vector<int>>& capacity,
