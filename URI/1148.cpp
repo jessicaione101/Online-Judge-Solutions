@@ -5,11 +5,12 @@
 #include <list>
 #include <utility>
 #include <algorithm>
-#include <limits>
+
+const int kMax = 1000;
 
 int dijkstra(const std::vector<std::vector<int>>& graph,
              const int source, const int destination) {
-  std::vector<int> distance(graph.size(), 1000);
+  std::vector<int> distance(graph.size(), kMax);
   distance[source] = 0;
   std::vector<int> previous(graph.size(), -1);
 
