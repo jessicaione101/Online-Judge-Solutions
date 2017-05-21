@@ -27,19 +27,19 @@ int main() {
   while (t-- > 0) {
     int n;
     std::cin >> n;
-    std::vector<int> sequence(n);
+    std::vector<int> key(n);
     for (int i = 0; i < n; ++i)
-      std::cin >> sequence[i];
+      std::cin >> key[i];
     std::string line;
     std::getline(std::cin, line);
     std::getline(std::cin, line);
 
-    int size = cipher[*std::max_element(sequence.begin(), sequence.end())];
+    int size = cipher[*std::max_element(key.begin(), key.end())];
     std::string message(size+1, ' ');
     int position;
-    for (size_t i = 0, j = 0; i < line.size() && j < sequence.size(); ++i) {
+    for (size_t i = 0, j = 0; i < line.size() && j < key.size(); ++i) {
       if (line[i] >= 'A' && line[i] <= 'Z') {
-        position = cipher[sequence[j]];
+        position = cipher[key[j]];
         message[position] = line[i];
         ++j;
       }
@@ -53,3 +53,4 @@ int main() {
 
   return 0;
 }
+
