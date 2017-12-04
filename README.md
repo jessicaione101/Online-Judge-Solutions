@@ -1,9 +1,13 @@
 Solutions for online judges problems.
 
-[Codeforces](codeforces.com)
+Codeforces
+codeforces.com
 
-[SPOJ](www.spoj.com)
+SPOJ
+www.spoj.com
 
-[URI](www.urionlinejudge.com.br)
+URI
+www.urionlinejudge.com.br
 
-[UVa](uva.onlinejudge.org)
+UVa
+uva.onlinejudge.org
